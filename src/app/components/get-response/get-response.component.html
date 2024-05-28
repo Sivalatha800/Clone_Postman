@@ -1,0 +1,61 @@
+<div class="container d-flex align-items-center justify-content-center">
+    <div class="innerContainer mt-4">
+        <form novalidate autocomplete="off" [formGroup]="getResponseForm">
+
+            <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">GET</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item">POST</a></li>
+                    <li><a class="dropdown-item" >PUT</a></li>
+                    <li><a class="dropdown-item" >PATCH</a></li>
+                    <li><a class="dropdown-item" >DELETE</a></li>
+                    <li><a class="dropdown-item" >HEAD</a></li>
+                    <li><a class="dropdown-item" >OPTIONS</a></li>                    
+                </ul>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-10 form-container">
+                    <label for="url" class="form-label">URL<span class="mandatory text-danger ms-1">*</span></label>
+                    <input type="text" class="form-control" id="url" placeholder="Enter URL" formControlName="url">
+                    <div class="d-flex flex-column"
+                        *ngIf="(submitted && formValidations['url'].errors) || (formValidations['url'].errors && formValidations['url'].touched && formValidations['url'].dirty )">
+                        <span class="alert alert-danger font-medium"
+                            *ngIf="formValidations['url'].errors['required']">Please enter URL.</span>
+                    </div>
+                </div>
+                <div class="col-2 submit-btn-margin">
+                    <button class="btn btn-primary btn-block" (click)="submit()">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 form-container">
+                    <label for="request" class="form-label">Request Content</label>
+                    <textarea class="form-control" id="request" rows="4" placeholder="Enter Request Content"
+                        formControlName="request"></textarea>
+
+                    <div class="d-flex flex-column"
+                        *ngIf="(submitted && formValidations['request'].errors) || (formValidations['request'].errors && formValidations['request'].touched && formValidations['request'].dirty )">
+                        <span class="alert alert-danger font-medium"
+                            *ngIf="formValidations['request'].errors['required']">Please enter request.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="col-12 form-container">
+                    <label for="token" class="form-label">Token</label>
+                    <textarea class="form-control" id="token" rows="4" placeholder="Enter Token"
+                        formControlName="token"></textarea>
+                </div>
+            </div>
+            <div class="col-12 mb-3 mt-4 form-container">
+                <label for="resContent" class="form-label mb-0">Response Content</label>
+                <div class="respDiv">
+                    <pre [ngClass]="{'respContainer' : respContent }">{{respContent | json}}</pre>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

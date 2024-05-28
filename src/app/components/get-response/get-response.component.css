@@ -1,0 +1,73 @@
+.submit-btn-margin {
+    margin-top: 1.4rem !important;
+    text-align: end;
+}
+
+.innerContainer {
+    width: 700px;
+}
+
+.mt-lg-1 {
+    margin-top: 1rem !important;
+}
+
+.respContainer {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.respDiv {
+    border: 1px solid #B7B7B7 !important;
+    font-size: 14px !important;
+    border-radius: 0.375rem;
+    height: 250px;
+}
+
+.respDiv pre {
+    font-size: 14px !important;
+    padding: 10px;
+}
+
+/* custom-scroll.css */
+
+/* Vertical Scrollbar Track */
+::-webkit-scrollbar {
+    width: 4px;
+    /* Width of the vertical scrollbar */
+    height: 4px;
+    /* Height of the horizontal scrollbar */
+}
+
+/* Vertical Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #0D316F;
+    /* Color of the vertical scrollbar handle */
+    border-radius: 4px;
+    /* Border radius of the vertical scrollbar handle */
+}
+
+/* Vertical Scrollbar Handle when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0D316F;
+    /* Color of the vertical scrollbar handle on hover */
+}
+
+/* Horizontal Scrollbar Track */
+::-webkit-scrollbar-track-horizontal {
+    background-color: transparent;
+    /* Background color of the horizontal scrollbar track */
+}
+
+/* Horizontal Scrollbar Handle */
+::-webkit-scrollbar-thumb-horizontal {
+    background-color: #0D316F;
+    /* Color of the horizontal scrollbar handle */
+    border-radius: 4px;
+    /* Border radius of the horizontal scrollbar handle */
+}
+
+/* Horizontal Scrollbar Handle when hovered */
+::-webkit-scrollbar-thumb-horizontal:hover {
+    background-color: #0D316F;
+    /* Color of the horizontal scrollbar handle on hover */
+}

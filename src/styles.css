@@ -1,1 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
+
+.alert {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 5px 0 0 !important;
+    font-size: 12px;
+    margin: 0;
+}
+
+.alert-danger {
+    color: #F93336 !important;
+}
+
+.alert-success {
+    color: #00A896 !important;
+}
+
+.form-container .form-control,
+.form-container .form-select {
+    border-color: #B7B7B7 !important;
+    font-size: 14px !important;
+}
+
+.form-container .form-label {
+    margin-bottom: 0rem;
+    font-size: 14px;
+    color: #0D316F;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.form-container .mandatory {
+    display: inline-flex;
+    color: #F93336;
+}
+
+.form-container .btn {
+    font-weight: 500;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    border-color: #b7b7b7;
+    line-height: normal;
+}
+
+.commonBtn .btn-primary {
+    padding: 0.5rem 0.75rem;
+    font-size: 16px;
+}
+
+.form-container input::file-selector-button,
+.form-container input::file-selector-button:hover,
+.form-container input::file-selector-button:focus,
+.form-container input::file-selector-button:focus:active {
+    background: #fff !important;
+    padding: 13px;
+}
+
+.form-container .input-group button:hover,
+.form-container .input-group button:focus,
+.form-container .input-group button:active,
+.form-container .input-group button:active:focus {
+    color: #fff !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(174, 105, 245, .25);
+}
+
+.form-container .form-label {
+    margin-bottom: 0rem;
+    font-size: 14px;
+    color: #0D316F;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.form-container .mandatory {
+    font-size: 20px;
+    display: inline-flex;
+}
+
+.form-container input::file-selector-button,
+.form-container input::file-selector-button:hover,
+.form-container input::file-selector-button:focus,
+.form-container input::file-selector-button:focus:active {
+    background: #fff !important;
+    padding: 13px;
+}
+
+.form-container .input-group button:hover,
+.form-container .input-group button:focus,
+.form-container .input-group button:active,
+.form-container .input-group button:active:focus {
+    color: #fff !important;
+}
+
+.form-line-Item .form-switch {
+    padding-left: 0;
+    display: inline-block;
+}
+
+.form-line-Item .form-check-input {
+    margin-left: 12px;
+    float: right !important;
+}
+
+.form-container .form-control:focus,
+.form-container .form-select:focus {
+    box-shadow: none;
+}
+
+.form-container .valid-feedback,
+.form-container .invalid-feedback {
+    display: none;
+}
+
+.form-container .input-group input[type='text'] {
+    border-radius: 0.375rem;
+}
+
+.form-btnGroup .btn {
+    height: 35px;
+}
+.form-btnGroup .btn-primary,
+.form-btnGroup .btn-outline-danger {
+    padding: 0.9rem 0.75rem;
+}
+.text-danger{
+    color: #F93336 !important;
+}
